@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name= "viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <!--build:css css/main.css-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/portstyles.css" />
+    <!--endbuild-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    
+    <title>Digital Planner</title>
+
+</head>
+
+<body>
+<div class="d-none d-sm-block">
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Digital Planner</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+
+<nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="portfolio.html"><img src="img\663353.png" height="30" width="30"/></a>
+        <span class="navbar-text ml-auto">
+            <a role="button" class="button-18" data-toggle="modal" data-target="#uploadModal">
+                <i class-="fa fa-sign-in"></i>Upload
+            </a>
+            <a role="button" class="button-18 btn" data-toggle="modal" data-target="#loginModal">
+                <i class-="fa fa-sign-in"></i>Login
+            </a>
+        </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nucampNavbar">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item "><a class="nav-link" href="portfolio.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="portabout.html">About</a></li>
+            <li class="nav-item active"><a class="nav-link" href="#">Contacts</a></li>
+        </ul>
+    </div>
+    </div>
+</nav>
+    <div id="uploadModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Upload</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div> 
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                        <form>
+                            <div class="form">
+                                <div class="input-group mb-3">
+                                    <div class="custom-file">
+                                      <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                      <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                                    </div>
+                                    <div class="input-group-append">
+                                      <span class="input-group-text" id="">Upload</span>
+                                    </div>
+                                </div>
+                            </div>                                  
+                        </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-now">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email Address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-content">
+            <div class="col">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="portfolio.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Contact</a></li>
+                </ol>
+               <h1>Contact Info</h1>
+               <hr />
+            </div>
+        </div>
+    
+        <div class="row row-content align-items-center">
+            <div class="col-sm-4">
+                <h4>Our Address</h4>
+                <address>
+                    1 Digital Way<br />
+                    Houston, TX 77001<br />
+                    U.S.A.
+                </address>
+            </div>
+            <div class="col">
+                <a role="button" class="btn btn-link" href="tel:+0000000"><i class="fa fa-phone"></i> 0-000-000-0000</a><br />
+                <a role="button" class="btn btn-link" href="b.tran222001@gmail.com"><i class="fa fa-envelope-o"></i> b.tran222001@gmail.com</a>
+            </div>
+        </div>
+    
+        <div class="row row-content">
+            <div class="col-12">
+                <h2>Send us your Feedback</h2>
+                <hr />
+            </div>
+            <div class="col-md-10">
+                <form>
+                    <div class="form-group row">
+                        <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                        <div class="col-5 col-md-3">
+                            <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                        </div>
+                        <div class="col-7">
+                            <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-md-2 col-form-label">Email</label>
+                        <div class="col-md-10">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col offset-md-2">
+                            May we contact you?
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
+                                <label for="contactYes" class="form-check-label">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                                <label for="contactNo" class="form-check-label">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit" class="btn btn-warning">Send Feedback</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                        <h5>Links</h5>
+                        <ul class="list unstyled">
+                            <li><a href="aboutus.html">About</a></li>
+                            <li><a href="contactus.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-5 text-center">
+                        <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <a role="button" class="btn btn-link" href="b.tran222001.gmail.com"><i class="fa fa-envelope-o"></i> b.tran222001.gmail.com</a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <!--build:js js/main-js-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js\portscript.js"></script>
+    <!--endbuild--> 
+
+</body>
+
+</html>
